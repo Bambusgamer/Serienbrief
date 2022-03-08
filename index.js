@@ -1,14 +1,14 @@
-// Generating my CV with docx
+
 const fs = require('fs')
 const docx = require("docx");
 const { AlignmentType, Document, HeadingLevel, Packer, Paragraph, TabStopPosition, TabStopType, TextRun } = docx;
+const data= require('./data.json')
 
-// Documents contain sections, you can have multiple sections per document, go here to learn more about sections
-// This simple example will only contain one section
+data.foreach(e=>{
 const doc = new Document({
-    creator: "Test",
-    description: "this is a test document",
-    title: "Tust",
+    creator: data.creator,
+    description: "Das ist ein Antrag auf befreiung.",
+    title: "Antrag auf befreiung",
     sections: [{
         properties: {},
         children: [
@@ -55,6 +55,8 @@ const doc = new Document({
 Packer.toBuffer(doc).then((buffer) => {
     fs.writeFileSync("My Document.docx", buffer);
 });
+
+})
 
 // Done! A file called 'My Document.docx' will be in your file system.
 // const express = require("express");
