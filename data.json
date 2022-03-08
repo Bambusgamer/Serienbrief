@@ -1,5 +1,5 @@
 [
-    {"lastname":"Richter","gender":true,"fullname":"Paul Brabant"},
+    {"lastname":"Richter","gender":true,"fullname":"Paul Brabant","hobbys":["Coden", "Cock","Masturbieren"]},
     {"lastname":"Lichter","gender":true,"fullname":"Paul Labant"},
     {"lastname":"Nichter","gender":true,"fullname":"Paul Nichter"},
     {"lastname":"Klichter","gender":false,"fullname":"Paul Brichter"},
